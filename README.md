@@ -1,4 +1,6 @@
 [![license](https://img.shields.io/github/license/jamesisaac/react-native-background-task.svg)](https://opensource.org/licenses/MIT)
+[![npm version](https://badge.fury.io/js/transaction-retry-tool.svg)](https://badge.fury.io/js/transaction-retry-tool)
+
 
 # Transaction-Retry Tool
 
