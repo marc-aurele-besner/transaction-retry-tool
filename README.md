@@ -1,3 +1,4 @@
+
 [![license](https://img.shields.io/github/license/jamesisaac/react-native-background-task.svg)](https://opensource.org/licenses/MIT)
 [![npm version](https://badge.fury.io/js/transaction-retry-tool.svg)](https://badge.fury.io/js/transaction-retry-tool)
 
@@ -5,6 +6,34 @@
 # Transaction-Retry Tool
 
 This Hardhat plugin add 2 tasks and 2 functions to retry transaction and get the current gas cost
+
+
+     _                                  _   _                            _                     _              _ 
+    | |                                | | (_)                          | |                   | |            | |
+    | |_ _ __ __ _ _ __  ___  __ _  ___| |_ _  ___  _ __ ______ _ __ ___| |_ _ __ _   _ ______| |_ ___   ___ | |
+    | __| '__/ _' | '_ \/ __|/ _' |/ __| __| |/ _ \| '_ \______| '__/ _ \ __| '__| | | |______| __/ _ \ / _ \| |
+    | |_| | | (_| | | | \__ \ (_| | (__| |_| | (_) | | | |     | | |  __/ |_| |  | |_| |      | || (_) | (_) | |
+     \__|_|  \__,_|_| |_|___/\__,_|\___|\__|_|\___/|_| |_|     |_|  \___|\__|_|   \__, |       \__\___/ \___/|_|
+                                                                                   __/ |                        
+                                                                                  |___/                         
+## Directories
+ - [src/](./src/)
+
+ - [.eslintrc.js](./.eslintrc.js)
+ - [.npmignore](./.npmignore)
+ - [.prettierignore](./.prettierignore)
+ - [.prettierrc](./.prettierrc)
+ - [awesome-readme.config.js](./awesome-readme.config.js)
+ - [CONTRIBUTING.md](./CONTRIBUTING.md)
+ - [LICENSE](./LICENSE)
+ - [package-lock.json](./package-lock.json)
+ - [package.json](./package.json)
+ - [README.md](./README.md)
+ - [README3.md](./README3.md)
+ - [tsconfig.json](./tsconfig.json)
+ - [tsconfig.prod.json](./tsconfig.prod.json)
+ - [tslint.json](./tslint.json)
+
 
 ## Tasks
 
@@ -43,4 +72,31 @@ Function allow you to use the transaction retry tool OR get the current gas cost
         gasPrice?: string
     )
     transactionRetry.gasCost()
+```
+
+## Directory Tree
+```
+transaction-retry-tool/
+│   .eslintrc.js/
+│   .npmignore/
+│   .prettierignore/
+│   .prettierrc/
+│   awesome-readme.config.js/
+│   CONTRIBUTING.md/
+│   LICENSE/
+│   package-lock.json/
+│   package.json/
+│   README.md/
+│   README3.md/
+│   tsconfig.json/
+│   tsconfig.prod.json/
+│   tslint.json/
+└─── src/
+   │   getGasCost.ts/
+   │   index.ts/
+   │   README.md/
+   │   retryTransaction.ts/
+   │   serveTasks.ts/
+   │   TransactionRetry.ts/
+   │   type-extensions.ts/
 ```
