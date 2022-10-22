@@ -1,6 +1,6 @@
 {
   "name": "transaction-retry-tool",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Tool to retry transactions on a blockchain",
   "repository": "https://github.com/marc-aurele-besner/transaction-retry-tool.git",
   "author": "Marc-Aurele Besner <82244926+marc-aurele-besner@users.noreply.github.com>",
