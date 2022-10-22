@@ -8,11 +8,11 @@ module.exports = {
      \\__|_|  \\__,_|_| |_|___/\\__,_|\\___|\\__|_|\\___/|_| |_|     |_|  \\___|\\__|_|   \\__, |       \\__\\___/ \\___/|_|
                                                                                    __/ |                        
                                                                                   |___/                         `,
-    root_license: `[![npm version](https://badge.fury.io/js/awesome-readme.svg)](https://badge.fury.io/js/awesome-readme)`,
+    root_license: `[![npm version](https://badge.fury.io/js/transaction-retry-tool.svg)](https://badge.fury.io/js/transaction-retry-tool)`,
     root_header: `
 This Hardhat plugin add 2 tasks and 2 functions to retry transaction and get the current gas cost
 
-## Install transaction-retry-tool
+## Install Transaction-Retry-Tool
 
 \`\`\`
 npm i transaction-retry-tool

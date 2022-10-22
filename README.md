@@ -1,6 +1,6 @@
 
 [![license](https://img.shields.io/github/license/jamesisaac/react-native-background-task.svg)](https://opensource.org/licenses/MIT)
-[![npm version](https://badge.fury.io/js/awesome-readme.svg)](https://badge.fury.io/js/awesome-readme)
+[![npm version](https://badge.fury.io/js/transaction-retry-tool.svg)](https://badge.fury.io/js/transaction-retry-tool)
 
 # transaction-retry-tool
 
@@ -18,7 +18,7 @@
 
 This Hardhat plugin add 2 tasks and 2 functions to retry transaction and get the current gas cost
 
-## Install transaction-retry-tool
+## Install Transaction-Retry-Tool
 
 ```
 npm i transaction-retry-tool
