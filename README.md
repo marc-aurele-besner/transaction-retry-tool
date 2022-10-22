@@ -2,11 +2,9 @@
 [![license](https://img.shields.io/github/license/jamesisaac/react-native-background-task.svg)](https://opensource.org/licenses/MIT)
 [![npm version](https://badge.fury.io/js/transaction-retry-tool.svg)](https://badge.fury.io/js/transaction-retry-tool)
 
+# transaction-retry-tool
 
-# Transaction-Retry Tool
-
-This Hardhat plugin add 2 tasks and 2 functions to retry transaction and get the current gas cost
-
+```
 
      _                                  _   _                            _                     _              _ 
     | |                                | | (_)                          | |                   | |            | |
@@ -16,12 +14,21 @@ This Hardhat plugin add 2 tasks and 2 functions to retry transaction and get the
      \__|_|  \__,_|_| |_|___/\__,_|\___|\__|_|\___/|_| |_|     |_|  \___|\__|_|   \__, |       \__\___/ \___/|_|
                                                                                    __/ |                        
                                                                                   |___/                         
+```
+
+This Hardhat plugin add 2 tasks and 2 functions to retry transaction and get the current gas cost
+
+## Install Transaction-Retry-Tool
+
+```
+npm i transaction-retry-tool
+```
+
 ## Directories
  - [src/](./src/)
 
  - [.eslintrc.js](./.eslintrc.js)
  - [.npmignore](./.npmignore)
- - [.prettierignore](./.prettierignore)
  - [.prettierrc](./.prettierrc)
  - [awesome-readme.config.js](./awesome-readme.config.js)
  - [CONTRIBUTING.md](./CONTRIBUTING.md)
@@ -29,11 +36,12 @@ This Hardhat plugin add 2 tasks and 2 functions to retry transaction and get the
  - [package-lock.json](./package-lock.json)
  - [package.json](./package.json)
  - [README.md](./README.md)
- - [README3.md](./README3.md)
  - [tsconfig.json](./tsconfig.json)
  - [tsconfig.prod.json](./tsconfig.prod.json)
  - [tslint.json](./tslint.json)
 
+
+    
 
 ## Tasks
 
@@ -64,39 +72,38 @@ gas-cost: Get the current gas price on the selected network in wei
 Function allow you to use the transaction retry tool OR get the current gas cost.
 
 ```
-    const { transactionRetry } = require('hardhat');
+const { transactionRetry } = require('hardhat');
 
-    transactionRetry.retry(
-        txHash: string,
-        signerKey: string,
-        gasPrice?: string
-    )
-    transactionRetry.gasCost()
+transactionRetry.retry(
+    txHash: string,
+    signerKey: string,
+    gasPrice?: string
+)
+transactionRetry.gasCost()
 ```
 
 ## Directory Tree
 ```
 transaction-retry-tool/
-│   .eslintrc.js/
-│   .npmignore/
-│   .prettierignore/
-│   .prettierrc/
-│   awesome-readme.config.js/
-│   CONTRIBUTING.md/
-│   LICENSE/
-│   package-lock.json/
-│   package.json/
-│   README.md/
-│   README3.md/
-│   tsconfig.json/
-│   tsconfig.prod.json/
-│   tslint.json/
+│   .eslintrc.js
+│   .npmignore
+│   .prettierrc
+│   awesome-readme.config.js
+│   CONTRIBUTING.md
+│   LICENSE
+│   package-lock.json
+│   package.json
+│   README.md
+│   tsconfig.json
+│   tsconfig.prod.json
+│   tslint.json
 └─── src/
-   │   getGasCost.ts/
-   │   index.ts/
-   │   README.md/
-   │   retryTransaction.ts/
-   │   serveTasks.ts/
-   │   TransactionRetry.ts/
-   │   type-extensions.ts/
+   │   getGasCost.ts
+   │   index.ts
+   │   README.md
+   │   retryTransaction.ts
+   │   serveTasks.ts
+   │   TransactionRetry.ts
+   │   type-extensions.ts
 ```
+## Don't hesitate to contribute to this project.
