@@ -16,13 +16,24 @@
                                                                                   |___/                         
 ```
 
-This Hardhat plugin add 2 tasks and 2 functions to retry transaction and get the current gas cost
+This Hardhat plugin provides two tasks and two functions to help you manage and optimize your transactions on Ethereum compatible blockchain. The two tasks include the ability to retry a transaction and retrieve the current gas cost.
 
 ## Install Transaction-Retry-Tool
 
-```
+To install the Hardhat Transaction-Retry-Tool Plugin, run the following command in your project directory:
+
+```shell
 npm i transaction-retry-tool
 ```
+
+Next, add the plugin to your hardhat.config.js file:
+
+```js
+require("transaction-retry-tool");
+```
+
+And that's it! You can now use the two tasks and functions provided by this plugin to manage and optimize your transactions.
+
 
 ## Directories
  - [src/](./src/)
@@ -30,12 +41,11 @@ npm i transaction-retry-tool
  - [.eslintrc.js](./.eslintrc.js)
  - [.npmignore](./.npmignore)
  - [.prettierrc](./.prettierrc)
- - [awesome-readme.config.js](./awesome-readme.config.js)
  - [CONTRIBUTING.md](./CONTRIBUTING.md)
  - [LICENSE](./LICENSE)
+ - [awesome-readme.config.js](./awesome-readme.config.js)
  - [package-lock.json](./package-lock.json)
  - [package.json](./package.json)
- - [README.md](./README.md)
  - [tsconfig.json](./tsconfig.json)
  - [tsconfig.prod.json](./tsconfig.prod.json)
  - [tslint.json](./tslint.json)
@@ -45,11 +55,15 @@ npm i transaction-retry-tool
 
 ## Tasks
 
-```
+The plugin adds two tasks to the Hardhat CLI:
+
+```shell
 npx hardhat retry
 ```
 
 ### Task: retry
+
+This task is used to retry a transaction with the current gas price or a specified one.
 
 Usage: hardhat [GLOBAL OPTIONS] retry --tx-hash <STRING> --signer-key <STRING> [--gas-price <STRING>]
 
@@ -63,6 +77,8 @@ retry: Retry a transaction with the current gas price or specify one
 
 ### Task: gas-cost
 
+This task is used to retrieve the current gas price on the selected network in wei.
+
 Usage: hardhat [GLOBAL OPTIONS] gas-cost
 
 gas-cost: Get the current gas price on the selected network in wei
@@ -71,7 +87,7 @@ gas-cost: Get the current gas price on the selected network in wei
 
 Function allow you to use the transaction retry tool OR get the current gas cost.
 
-```
+```js
 const { transactionRetry } = require('hardhat');
 
 transactionRetry.retry(
@@ -88,22 +104,21 @@ transaction-retry-tool/
 │   .eslintrc.js
 │   .npmignore
 │   .prettierrc
-│   awesome-readme.config.js
 │   CONTRIBUTING.md
 │   LICENSE
+│   awesome-readme.config.js
 │   package-lock.json
 │   package.json
-│   README.md
 │   tsconfig.json
 │   tsconfig.prod.json
 │   tslint.json
 └─── src/
+   │   README.md
+   │   TransactionRetry.ts
    │   getGasCost.ts
    │   index.ts
-   │   README.md
    │   retryTransaction.ts
    │   serveTasks.ts
-   │   TransactionRetry.ts
    │   type-extensions.ts
 ```
 ## Don't hesitate to contribute to this project.
