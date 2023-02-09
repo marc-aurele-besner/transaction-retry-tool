@@ -14,7 +14,9 @@ This Hardhat plugin add 2 tasks and 2 functions to retry transaction and get the
 
 ## Install Transaction-Retry-Tool
 
-\`\`\`
+To install the Hardhat Transaction-Retry-Tool Plugin, run the following command:
+
+\`\`\`shell
 npm i transaction-retry-tool
 \`\`\`
 `,
@@ -23,11 +25,15 @@ npm i transaction-retry-tool
 
 ## Tasks
 
-\`\`\`
+The plugin adds two tasks to the Hardhat CLI:
+
+\`\`\`shell
 npx hardhat retry
 \`\`\`
 
 ### Task: retry
+
+This task is used to retry a transaction with the current gas price or a specified one.
 
 Usage: hardhat [GLOBAL OPTIONS] retry --tx-hash <STRING> --signer-key <STRING> [--gas-price <STRING>]
 
@@ -41,6 +47,8 @@ retry: Retry a transaction with the current gas price or specify one
 
 ### Task: gas-cost
 
+This task is used to retrieve the current gas price on the selected network in wei.
+
 Usage: hardhat [GLOBAL OPTIONS] gas-cost
 
 gas-cost: Get the current gas price on the selected network in wei
@@ -49,7 +57,7 @@ gas-cost: Get the current gas price on the selected network in wei
 
 Function allow you to use the transaction retry tool OR get the current gas cost.
 
-\`\`\`
+\`\`\`js
 const { transactionRetry } = require('hardhat');
 
 transactionRetry.retry(

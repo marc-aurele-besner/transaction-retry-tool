@@ -17,16 +17,16 @@
 ```
 
 
- - [getGasCost.ts](./getGasCost.ts) - [index.ts](./index.ts) - [README.md](./README.md) - [retryTransaction.ts](./retryTransaction.ts) - [serveTasks.ts](./serveTasks.ts) - [TransactionRetry.ts](./TransactionRetry.ts) - [type-extensions.ts](./type-extensions.ts)
+ - [README.md](./README.md) - [TransactionRetry.ts](./TransactionRetry.ts) - [getGasCost.ts](./getGasCost.ts) - [index.ts](./index.ts) - [retryTransaction.ts](./retryTransaction.ts) - [serveTasks.ts](./serveTasks.ts) - [type-extensions.ts](./type-extensions.ts)
 ## Directory Tree
 [<- Previous](https://github.com/marc-aurele-besner/transaction-retry-tool.git)
 ```
 src/
+   │   README.md
+   │   TransactionRetry.ts
    │   getGasCost.ts
    │   index.ts
-   │   README.md
    │   retryTransaction.ts
    │   serveTasks.ts
-   │   TransactionRetry.ts
    │   type-extensions.ts
 ```
