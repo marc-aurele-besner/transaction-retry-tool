@@ -16,15 +16,24 @@
                                                                                   |___/                         
 ```
 
-This Hardhat plugin add 2 tasks and 2 functions to retry transaction and get the current gas cost
+This Hardhat plugin provides two tasks and two functions to help you manage and optimize your transactions on Ethereum compatible blockchain. The two tasks include the ability to retry a transaction and retrieve the current gas cost.
 
 ## Install Transaction-Retry-Tool
 
-To install the Hardhat Transaction-Retry-Tool Plugin, run the following command:
+To install the Hardhat Transaction-Retry-Tool Plugin, run the following command in your project directory:
 
 ```shell
 npm i transaction-retry-tool
 ```
+
+Next, add the plugin to your hardhat.config.js file:
+
+```js
+require("transaction-retry-tool");
+```
+
+And that's it! You can now use the two tasks and functions provided by this plugin to manage and optimize your transactions.
+
 
 ## Directories
  - [src/](./src/)
@@ -34,7 +43,6 @@ npm i transaction-retry-tool
  - [.prettierrc](./.prettierrc)
  - [CONTRIBUTING.md](./CONTRIBUTING.md)
  - [LICENSE](./LICENSE)
- - [README.md](./README.md)
  - [awesome-readme.config.js](./awesome-readme.config.js)
  - [package-lock.json](./package-lock.json)
  - [package.json](./package.json)
@@ -98,7 +106,6 @@ transaction-retry-tool/
 │   .prettierrc
 │   CONTRIBUTING.md
 │   LICENSE
-│   README.md
 │   awesome-readme.config.js
 │   package-lock.json
 │   package.json

@@ -10,15 +10,24 @@ module.exports = {
                                                                                   |___/                         `,
     root_license: `[![npm version](https://badge.fury.io/js/transaction-retry-tool.svg)](https://badge.fury.io/js/transaction-retry-tool)`,
     root_header: `
-This Hardhat plugin add 2 tasks and 2 functions to retry transaction and get the current gas cost
+This Hardhat plugin provides two tasks and two functions to help you manage and optimize your transactions on Ethereum compatible blockchain. The two tasks include the ability to retry a transaction and retrieve the current gas cost.
 
 ## Install Transaction-Retry-Tool
 
-To install the Hardhat Transaction-Retry-Tool Plugin, run the following command:
+To install the Hardhat Transaction-Retry-Tool Plugin, run the following command in your project directory:
 
 \`\`\`shell
 npm i transaction-retry-tool
 \`\`\`
+
+Next, add the plugin to your hardhat.config.js file:
+
+\`\`\`js
+require("transaction-retry-tool");
+\`\`\`
+
+And that's it! You can now use the two tasks and functions provided by this plugin to manage and optimize your transactions.
+
 `,
     root_body: `
     
