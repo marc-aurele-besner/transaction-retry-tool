@@ -16,7 +16,7 @@ This Hardhat plugin provides two tasks and two functions to help you manage and 
 
 To install the Hardhat Transaction-Retry-Tool Plugin, run the following command in your project directory:
 
-\`\`\`shell
+\`\`\`bash
 npm i transaction-retry-tool
 \`\`\`
 
@@ -36,7 +36,7 @@ And that's it! You can now use the two tasks and functions provided by this plug
 
 The plugin adds two tasks to the Hardhat CLI:
 
-\`\`\`shell
+\`\`\`bash
 npx hardhat retry
 \`\`\`
 
