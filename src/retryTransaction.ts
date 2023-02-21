@@ -1,4 +1,4 @@
-import { getNewGasPrice, getSigner, getTransaction, replaceTransactionIfNecessary } from './utils'
+import { getSigner, getTransaction, replaceTransactionIfNecessary } from './utils'
 
 const retryTransaction = async (env: any, txHash: string, signerKey: string, gasPrice?: string) => {
     try {
